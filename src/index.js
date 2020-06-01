@@ -47,7 +47,6 @@ const encrypt = async function(string, passphrase = prompt()) {
 const decrypt = async function(string, passphrase = prompt()) {
   const encrypted = Uint8Array.from(atob(string), c => c.charCodeAt(0))
   const [iv, ciphertext] = [encrypted.slice(0, 12), encrypted.slice(12)]
-  console.log(iv, ciphertext)
 
   const key = await crypto.subtle.importKey(
     'raw',
