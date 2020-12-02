@@ -1,1 +1,30 @@
-<head><title>Encrypted</title><meta name="viewport" content="width=device-width,initial-scale=1"></head><body><div id="text" contenteditable="true"></div><script src="/bundle.js?4f5d647d635ec70541f9"></script></body>
+<head>
+  <title>Encrypted</title>
+  <style>
+    body {
+      margin: 0;
+      background: #121212;
+      display: flex;
+      justify-content: center;
+    }
+
+    #text {
+      width: 100%;
+      background: #212121;
+      padding: 24px;
+      outline: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      max-width: 1200px;
+      margin: 24px 0;
+      resize: none;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="text"></div>
+  <script src="./index.js"></script>
+  <script src="./sodium.js"></script>
+</body>
